@@ -46,7 +46,6 @@ public class Produto {
     @Column(nullable = false)
     private Boolean ativo = true;
 
-    @Column(name = "criado_em", updatable = false, insertable = false,
-            columnDefinition = "timestamp with time zone default now()")
+    @Column(name = "criado_em", updatable = false, insertable = false)
     private OffsetDateTime criadoEm;
 }
