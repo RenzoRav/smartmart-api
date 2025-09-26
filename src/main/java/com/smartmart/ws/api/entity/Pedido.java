@@ -42,7 +42,7 @@ public class Pedido {
     private TipoStatus status;
 
     @Column(name = "valor_total", nullable = false)
-    private BigDecimal valorTotal = BigDecimal.ZERO;
+    private BigDecimal valorTotal;
 
     @Column(name = "criado_em", updatable = false, insertable = false)
     private OffsetDateTime criadoEm;

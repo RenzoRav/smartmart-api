@@ -41,10 +41,10 @@ public class Produto {
     private BigDecimal preco;
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal custo = BigDecimal.ZERO;
+    private BigDecimal custo;
 
     @Column(nullable = false)
-    private Boolean ativo = true;
+    private Boolean ativo;
 
     @Column(name = "criado_em", updatable = false, insertable = false)
     private OffsetDateTime criadoEm;
