@@ -4,8 +4,8 @@ import java.time.OffsetDateTime;
 
 import com.smartmart.ws.api.entity.Pedido;
 import com.smartmart.ws.api.entity.Produto;
-import com.smartmart.ws.api.enums.TipoMotivo;
-import com.smartmart.ws.api.enums.TipoMovimento;
+import com.smartmart.ws.api.entity.enums.TipoMotivo;
+import com.smartmart.ws.api.entity.enums.TipoMovimento;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 import com.smartmart.ws.api.entity.Cliente;
-import com.smartmart.ws.api.enums.TipoStatus;
+import com.smartmart.ws.api.entity.enums.TipoStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
