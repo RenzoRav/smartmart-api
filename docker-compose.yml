@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smartmart-api
+    container_name: smartmart-api
+    ports:
+      - "8080:8080"
+    env_file: .env
+
