@@ -4,8 +4,6 @@ import java.time.OffsetDateTime;
 
 import com.smartmart.ws.api.entity.Pedido;
 import com.smartmart.ws.api.entity.Produto;
-import com.smartmart.ws.api.entity.enums.TipoMotivo;
-import com.smartmart.ws.api.entity.enums.TipoMovimento;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,12 +14,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class MovimentoDTO {
+public class MovimentoEstoqueDTO {
     private Long id;
     private Produto produto;
     private Integer quantidade;
-    private TipoMovimento tipo;
-    private TipoMotivo motivo;
+    private com.smartmart.ws.api.enums.TipoMovimento tipo;
+    private com.smartmart.ws.api.enums.TipoMotivo motivo;
     private Pedido pedidoRef;
     private OffsetDateTime criadoEm;
 }

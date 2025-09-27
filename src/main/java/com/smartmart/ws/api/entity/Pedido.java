@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.smartmart.ws.api.entity.enums.TipoStatus;
-import com.smartmart.ws.api.entity.enums.types.StatusType;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -38,8 +36,8 @@ public class Pedido {
     private Cliente cliente;
 
     @Column(nullable = false)
-    @Type(value = StatusType.class)
-    private TipoStatus status;
+    @Type(value = com.smartmart.ws.api.enums.types.StatusType.class)
+    private com.smartmart.ws.api.enums.TipoStatus status;
 
     @Column(name = "valor_total", nullable = false)
     private BigDecimal valorTotal;
