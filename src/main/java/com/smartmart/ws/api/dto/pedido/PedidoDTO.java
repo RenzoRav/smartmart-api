@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 import com.smartmart.ws.api.entity.Cliente;
+import com.smartmart.ws.api.entity.enums.TipoStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class PedidoDTO {
     private Long id;
     private Cliente cliente;
-    private com.smartmart.ws.api.enums.TipoStatus status;
+    private TipoStatus status;
     private BigDecimal valorTotal;
     private OffsetDateTime criadoEm;
 }

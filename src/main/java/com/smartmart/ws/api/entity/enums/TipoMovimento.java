@@ -1,4 +1,4 @@
-package com.smartmart.ws.api.enums;
+package com.smartmart.ws.api.entity.enums;
 
 public enum TipoMovimento {
     COMPRA_FORNECEDOR,

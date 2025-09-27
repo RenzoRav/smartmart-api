@@ -1,13 +1,16 @@
-version: "3.9"
-
 services:
-  api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: smartmart-api
-    container_name: smartmart-api
+  app:
+    build: .
+    container_name: smartmart_api
     ports:
       - "8080:8080"
-    env_file: .env
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://aws-1-sa-east-1.pooler.supabase.com:6543/postgres?sslmode=require&prepareThreshold=0
+      SPRING_DATASOURCE_USERNAME: postgres.fkcoljuiqeedpqcxupmz
+      SPRING_DATASOURCE_PASSWORD: tPBvHMmmBxoyECfX
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
 
+      SECURITY_JWT_SECRET: "uM2z1D8r8b1+S3l1qN1fZrUqv6jRqV9pWgN2d5h7k9m2q4t7y0u3x6z9A1C4F7J0"
+      SECURITY_JWT_ISSUER: "smartmart"
+      SECURITY_JWT_EXP_MIN: "60"

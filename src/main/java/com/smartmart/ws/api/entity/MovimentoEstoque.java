@@ -3,10 +3,10 @@ package com.smartmart.ws.api.entity;
 import java.time.OffsetDateTime;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.smartmart.ws.api.enums.TipoMotivo;
-import com.smartmart.ws.api.enums.TipoMovimento;
-import com.smartmart.ws.api.enums.types.TipoMotivoType;
-import com.smartmart.ws.api.enums.types.TipoMovimentoType;
+import com.smartmart.ws.api.entity.enums.TipoMotivo;
+import com.smartmart.ws.api.entity.enums.TipoMovimento;
+import com.smartmart.ws.api.entity.enums.types.TipoMotivoType;
+import com.smartmart.ws.api.entity.enums.types.TipoMovimentoType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
